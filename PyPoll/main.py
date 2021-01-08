@@ -26,7 +26,7 @@ with open(election_data, 'r') as csvfile:
     for y in unique_list:
         
         candidate_votes.append(0)
-    # needed to 
+    # needed to reset reader
     csvfile.seek(0)  
     next(csvreader)
     for row in csvreader:
